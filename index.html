@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      ul li {
+        padding: 8px;
+        border-radius: 5px;
+      }
+      ul li:hover {
+        color: rgb(168 85 247);
+        background-color: rgba(184, 187, 190, 0.858);
+      }
+      .btn1{
+        padding: 10px 16px;
+        background-color: rgb(168 85 247);
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+      .btn1:hover{
+        background-color: rgb(153,49,250);
+        transition: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-red- 50 fixed w-full flex item-center justify-around py-6 shadow-md">
+      <div class="flex gap-3 items-center">
+        <h2
+          class="text-2xl font-semibold  text-white bg bg-purple-500 px-4 py-2 rounded-full"
+        >
+          Y
+        </h2>
+        <h1 class="text-3xl font-semibold">Yasmin</h1>
+      </div>
+      <ul class="flex gap-16 font-medium hover:text-purple-500">
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+    </nav>
+
+    <!-- header section -->
+     <header class="h-screen flex items-center mx-40">
+      <div>
+        <div>
+          <h1 class="text-5xl font-bold text-slate-800">hello i'm Yasmin Akter</h1>
+          <p class="my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum laboriosam eligendi cupiditate ipsum sapiente sint error soluta nemo suscipit tempore harum maiores esse eius, totam itaque reiciendis ex eos?
+          </p>
+          <button class="btn1">Say Hello!</button>
+        </div>
+        <div></div>
+      </div>
+      <img class="w-72" src="/762582bb-9906-46d1-b4dd-eb3e798df23c.jpg" alt="" />
+     </header>
+  </body>
+</html>

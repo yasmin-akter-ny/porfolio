@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       ul li {
         padding: 8px;
@@ -23,7 +24,17 @@
       }
       .btn1:hover{
         background-color: rgb(153,49,250);
-        transition: scale(1.05);
+        transform: scale(1.05);
+      }
+      a{
+        padding: 5px;
+        font-size: 20px;
+        color: rgb(153,49,250);
+      }
+      a.hover{
+        background-color: rgb(153,49,250);
+        color: white;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -49,7 +60,7 @@
      <header class="h-screen flex items-center mx-40">
       <div>
         <div>
-          <h1 class="text-5xl font-bold text-slate-800">hello i'm Yasmin Akter</h1>
+          <h1 class="text-4xl text-white font-bold">Hello. <span class="text-purple-700">I'm Yasmin Akter</span>. I design <br>awesome websites.</h1>
           <p class="my-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum laboriosam eligendi cupiditate ipsum sapiente sint error soluta nemo suscipit tempore harum maiores esse eius, totam itaque reiciendis ex eos?
           </p>
@@ -59,5 +70,26 @@
       </div>
       <img class="w-72" src="/762582bb-9906-46d1-b4dd-eb3e798df23c.jpg" alt="" />
      </header>
+     
+     <!-- about section  -->
+      <div class="main max-w-6xl p-20 bg-slate-100 shadow-2xl rounded-md mx-auto flex items-center justify-between">
+        <div class="child1 w-1/2 relative">
+          <img class="bg-slate-200 rounded-md w-96" src="/762582bb-9906-46d1-b4dd-eb3e798df23c.jpg" alt="">
+          <div class="absolute -bottom-5 left-28 bg-white p-4 rounded-md shadow-xl">
+           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+           <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+          </div>
+        </div>
+        <div class="child2 w-1/2">
+          <h1 class="text-3xl font-bold">I'am a proffessional web developer and designer</h1>
+          <p class="text-slate-500 my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, at. Cumque quae in excepturi quis eius, nostrum earum rem sapiente laborum possimus odit corporis tempore saepe tempora ut sequi animi!</p>
+          <button class="btn1">my projects</button>
+          <button><i class="fa-solid fa-download"></i> Download CV</button>
+        </div>
+      </div>
   </body>
 </html>
